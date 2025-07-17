@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaLinux } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiTailwindcss, SiBootstrap, SiBurpsuite } from 'react-icons/si';
-import Footer from './footer';
+import Footer from './Footer';
 
 const icons = [
   { icon: <FaReact size={50} color="#61DBFB" />, name: 'React.js' },

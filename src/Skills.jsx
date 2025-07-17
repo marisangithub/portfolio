@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaLinux } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiTailwindcss, SiBootstrap, SiBurpsuite } from 'react-icons/si';
-import Footer from './footer';
+import Footer from './Footer';
 
 const skills = [
   { icon: <FaReact size={40} color="#61DBFB" />, name: 'React.js' },
