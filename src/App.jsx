@@ -4,7 +4,7 @@ import Home from './Home';
 import About from './About';
 import Project from './Project';
 import Skills from './Skills'
-import Resume from './assets/Marisan.pdf'
+import Resume from './assets/Marisan_Resume.pdf'
 import { useLocation } from 'react-router-dom';
 
 
@@ -29,7 +29,7 @@ const App = () => {
   to="/project"
   className={`m-2 text-white text-decoration-none px-2 py-1 rounded ${location.pathname === '/project' ? 'active-link' : ''}`}
 >
-  Project
+  Projects
 </Link>
 <Link
   to="/about"
