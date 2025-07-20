@@ -34,6 +34,13 @@ const Project = () => {
         'Built a weather application using OpenWeatherMap API to fetch and display real-time weather data for user-specified locations. Integrated API handling, error management, and clean UI to display temperature, humidity, and weather conditions dynamically, enhancing API and React skills.',
       link: 'https://shimmering-travesseiro-ad39fe.netlify.app/',
     },
+    {
+  title: '🗂️ CRUD User Management App',
+  description:
+    'Developed a CRUD (Create, Read, Update, Delete) application for managing user data with React, Node.js, Express, and MongoDB. The app allows adding, viewing, editing, and deleting user records with a clean UI, demonstrating RESTful API integration, state management using React hooks, and database connectivity for persistent storage.',
+  link: 'https://crud-frontend-xi-one.vercel.app/'
+},
+
   ];
 
   return (
