@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaLinux } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiBootstrap, SiBurpsuite } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaGitAlt, FaLinux } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiBootstrap, SiBurpsuite } from 'react-icons/si';
 import Footer from './Footer';
 
 const skills = [
@@ -16,7 +16,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="min-h-screen bg-[#1e1e1e] text-white flex flex-col items-center justify-center p-5">
+    <div className="min-h-screen bg-[#1e1e1e] flex flex-col items-center justify-center p-5">
       <h2 className="text-4xl font-heading font-bold text-red-500 mb-8">Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map((skill, index) => (

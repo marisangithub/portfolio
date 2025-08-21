@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 body {
-    background-color: #1e1e1e !important;
-    color: white !important;
+    background-color: #1e1e1e;
+    color: white;
     font-family: 'Inter', sans-serif;
 }
 
@@ -77,3 +77,17 @@ p{
   bottom: 0;
   width: 100%;
 }
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+  
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+

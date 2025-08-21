@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from './assets/main2.png';
+import profileImage from './assets/Portfolio-Profile.png';
 import { Typewriter } from 'react-simple-typewriter';
 
 

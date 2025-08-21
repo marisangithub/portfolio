@@ -4,7 +4,8 @@ import Home from './Home';
 import About from './About';
 import Project from './Project';
 import Skills from './Skills'
-import Resume from './assets/Marisan_Resume.pdf'
+import Resume from './assets/Marisan-Resume.pdf';
+import Toggle from './Toggle';
 import { useLocation } from 'react-router-dom';
 
 
@@ -45,7 +46,6 @@ const App = () => {
   Skills
 </Link>
 
-
           <div className="dropdown m-2">
             <button
               className="btn btn-secondary dropdown-toggle"
@@ -63,11 +63,12 @@ const App = () => {
 
           <a
             href={Resume}
-            download="Marisan_Resume.pdf"
+            download="Marisan-Resume.pdf"
             className="btn btn-outline-danger m-2"
           >
             Download Resume
           </a>
+          <Toggle/>
         </div>
 
         {/* RIGHT NAME - shown on md+ */}
@@ -92,6 +93,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/project' element={<Project />} />
         <Route path='/skills' element={<Skills />} />
+        
       </Routes>
 
 
