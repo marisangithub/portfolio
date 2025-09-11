@@ -1,5 +1,8 @@
 import React from 'react';
 import profileImage from './assets/Portfolio-Profile.png';
+import Github from './assets/github.png';
+import LinkedIn from './assets/linkedin.png';
+import Whatsapp from './assets/whatsapp.png';
 import { Typewriter } from 'react-simple-typewriter';
 
 
@@ -15,6 +18,29 @@ const Home = () => {
                 <Typewriter words={[ 'Full Stack Developer.', 'React Specialist.']} cursor cursorStyle='|' typeSpeed={70}
                   deleteSpeed={50}
                   delaySpeed={1500} loop /></span></h2>
+                  <div className='inlineflex'>
+                <a href="https://github.com/marisangithub">
+                  <img 
+                  src={Github} 
+                  alt="" 
+                  className='contactlogo mt-5'
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/mari-san-33bb8b288">
+                  <img 
+                  src={LinkedIn} 
+                  alt="" 
+                  className='contactlogo mt-5'
+                  />
+                </a>
+                <a href="https://wa.me/+916374536684">
+                  <img 
+                  src={Whatsapp} 
+                  alt="" 
+                  className='contactlogo mt-5'
+                  />
+                </a>
+                  </div>
             </div>
           </div>
 
