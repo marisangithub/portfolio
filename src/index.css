@@ -1,6 +1,26 @@
 * {
   box-sizing: border-box;
 }
+.container {
+  max-width: 1200px !important;
+  width: 100% !important;
+}
+html, body, #root {
+  height: 100%;      /* Make full height */
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;  /* Full height page */
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;           /* Pushes footer to bottom */
+}
+
+
 body {
     background-color: #1e1e1e;
     color: white;
