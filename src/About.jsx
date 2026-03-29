@@ -1,67 +1,115 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaLinux } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiBootstrap, SiBurpsuite } from 'react-icons/si';
-import Footer from './Footer';
-
-const icons = [
-  { icon: <FaReact size={50} color="#61DBFB" />, name: 'React.js' },
-  { icon: <FaNodeJs size={50} color="#3C873A" />, name: 'Node.js' },
-  { icon: <SiExpress size={50} color="#ffffff" />, name: 'Express.js' },
-  { icon: <SiMongodb size={50} color="#4DB33D" />, name: 'MongoDB' },
-  { icon: <FaDatabase size={50} color="#f0db4f" />, name: 'SQL' },
-  { icon: <SiTailwindcss size={50} color="#38B2AC" />, name: 'Tailwind CSS' },
-  { icon: <SiBootstrap size={50} color="#563d7c" />, name: 'Bootstrap' },
-  { icon: <FaGitAlt size={50} color="#F1502F" />, name: 'Git & GitHub' },
-  { icon: <FaLinux size={50} color="#FCC624" />, name: 'Linux' },
-  { icon: <SiBurpsuite size={50} color="#FF6F00" />, name: 'Burp Suite' },
-];
+import React from "react";
+import profileImage from "./assets/Hero.png";
 
 const About = () => {
-  const paragraphVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: (i) => ({
-      opacity: 1,
-      x: 0,
-      transition: { delay: i * 0.5, duration: 0.6 },
-    }),
-  };
-
-  const paragraphs = [
-    `Hello! I’m Marisan, a passionate MERN Stack Developer with a strong foundation in building clean, scalable, and user-centered full-stack web applications. I have gained hands-on experience creating intuitive frontend interfaces with React, building efficient backend APIs using Node.js and Express, and managing data effectively with MongoDB through my academic projects and personal learning journey.`,
-
-    `I love solving problems and continuously seek opportunities to learn and improve my skills, whether it’s deploying projects on cloud platforms or implementing best practices in clean code and responsive design. I believe in clear communication and collaboration to ensure that projects align with goals and deliver value to users.`,
-
-    `Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and building small utility tools to automate daily tasks as I continue to grow in this field.`,
-  ];
   return (
-    <>
-      <div className="container mt-3">
-        <h2 className="text-4xl font-heading font-bold text-red-500 mb-8">About</h2>
-        <div className="row">
-          <div className="col">
-            {paragraphs.map((text, index) => (
-              <motion.p
-                key={index}
-                custom={index}
-                variants={paragraphVariants}
-                initial="hidden"
-                animate="visible"
-                className="fs-5 font-sans"
-              >{text}</motion.p>
-            ))}
+    <section className="about-section py-5">
+      <div className="container">
+        {/* Heading */}
+        <div className="text-center mb-5">
+          <h1 className="display-4 fw-bold text-white">
+            About <span className="text-danger">Me</span>
+          </h1>
 
+          <p className="text-light mx-auto about-subtitle">
+            Get to know more about who I am, what I do, and the technologies I
+            use to build modern web applications.
+          </p>
+        </div>
+
+        <div className="row align-items-center g-5">
+          {/* Image Section */}
+          <div className="col-lg-5 text-center">
+            <div className="about-img-wrapper position-relative mx-auto">
+              <div className="about-glow"></div>
+
+              <img
+                src={profileImage}
+                alt="Marisan"
+                className="img-fluid about-img"
+              />
+
+              <div className="experience-badge">
+                <small className="text-light d-block">Specialized In</small>
+                <strong className="text-danger">MERN Developer</strong>
+              </div>
+            </div>
           </div>
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
-            <div className="d-grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(60px, 1fr))', maxWidth: '200px' }}>
-              {icons.map((icon,index)=>(<div key={index} className='mt-0' style={{padding:'5px'}}> {icon.icon}</div>))}
+
+          {/* Content Section */}
+          <div className="col-lg-7">
+            <h2 className="fw-bold text-white mb-4 about-title">
+              Passionate Full Stack Developer Creating
+              <span className="text-danger"> Modern Web Experiences</span>
+            </h2>
+
+            <p className="text-light about-text">
+              I’m Marisan, a Full Stack Developer with a strong interest in
+              building modern, responsive and user-friendly web applications. I
+              specialize in React.js, Node.js, Express.js and MongoDB, and I
+              enjoy transforming ideas into real-world digital experiences.
+            </p>
+
+            <p className="text-light about-text">
+              Along with web development, I also have knowledge in cyber
+              security tools and Linux environments. I enjoy learning new
+              technologies, solving problems and continuously improving my
+              skills to become a better developer every day.
+            </p>
+
+            {/* Cards */}
+            <div className="row g-3 mt-4">
+              <div className="col-6">
+                <div className="about-card h-100">
+                  <h3 className="text-danger fw-bold">1+</h3>
+                  <p className="mb-0 text-light">Years Learning & Building</p>
+                </div>
+              </div>
+
+              <div className="col-6">
+                <div className="about-card h-100">
+                  <h3 className="text-danger fw-bold">10+</h3>
+                  <p className="mb-0 text-light">Projects & Practice Works</p>
+                </div>
+              </div>
+
+              <div className="col-6">
+                <div className="about-card h-100">
+                  <h3 className="text-danger fw-bold">MERN</h3>
+                  <p className="mb-0 text-light">Frontend & Backend Specialist</p>
+                </div>
+              </div>
+
+              <div className="col-6">
+                <div className="about-card h-100">
+                  <h3 className="text-danger fw-bold">24/7</h3>
+                  <p className="mb-0 text-light">Passionate About Learning</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-4 d-flex flex-wrap gap-3">
+              <a
+                href="/Marisan-Resume.pdf"
+                download
+                className="btn btn-danger px-4 py-2 fw-semibold"
+              >
+                Download Resume
+              </a>
+
+              <a
+                href="/contact"
+                className="btn btn-outline-light px-4 py-2 fw-semibold"
+              >
+                Contact Me
+              </a>
             </div>
           </div>
         </div>
       </div>
-<Footer/>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default About
+export default About;

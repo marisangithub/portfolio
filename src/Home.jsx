@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from './assets/Portfolio-Profile.png';
+import profileImage from './assets/Hero.png';
 import Github from './assets/github.png';
 import LinkedIn from './assets/linkedin.png';
 import Whatsapp from './assets/whatsapp.png';
@@ -46,21 +46,15 @@ const Home = () => {
             </div>
 
             {/* RIGHT COLUMN (Profile Image) */}
-            <div className="col-12 col-md-6 text-center">
-              <img
-                src={profileImage}
-                alt="marisan"
-                className="glow-border img-fluid"
-                style={{
-                  maxWidth: '300px',
-                  height: 'auto',
-                  borderRadius: '50%',
-                  border: '2px solid red',
-                  objectFit: 'cover',
-                  objectPosition: 'top',
-                }}
-              />
-            </div>
+  <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+  <div className="hero-img-wrapper glow-border">
+    <img
+      src={profileImage}
+      alt="Marisan"
+      className="hero-img"
+    />
+  </div>
+</div>
           </div>
         </div>
       </div>
