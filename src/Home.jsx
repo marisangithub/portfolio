@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
   return (
-    <div className="page-wrapper">
+    <div className="bg-black page-wrapper">
       {/* Page Content */}
       <div className="page-content">
         <div className="container mt-5">
@@ -16,7 +16,7 @@ const Home = () => {
             
             {/* LEFT COLUMN (Text) */}
             <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
-              <h2 className="font-heading">
+              <h2 className="text-white font-heading">
                 Hello there, I am <br /> Marisan,{' '}
                 <span style={{ color: 'red' }}>
                   <Typewriter
@@ -60,7 +60,7 @@ const Home = () => {
       </div>
 
       {/* Sticky Footer */}
-      <Footer />
+      <Footer className=" text-white" />
     </div>
   );
 };

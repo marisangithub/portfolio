@@ -1,6 +1,7 @@
 import React from "react";
 import profileImage from "./assets/Hero.png";
 
+
 const About = () => {
   return (
     <section className="about-section py-5">
@@ -97,18 +98,12 @@ const About = () => {
               >
                 Download Resume
               </a>
-
-              <a
-                href="/contact"
-                className="btn btn-outline-light px-4 py-2 fw-semibold"
-              >
-                Contact Me
-              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   );
 };
 
