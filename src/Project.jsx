@@ -54,15 +54,26 @@ const projects = [
       "Users can add, view, update and delete records. The project demonstrates REST API integration, MongoDB connectivity, React state management and a clean responsive interface.",
   },
   {
-  title: "Personal Portfolio Website",
-  icon: "💼",
-  category: "Frontend / Portfolio",
-  tech: ["React", "Bootstrap", "Framer Motion"],
-  description:
-    "Designed and developed my personal portfolio website to showcase my skills, projects and resume.",
-  details:
-    "The portfolio includes responsive pages, dark mode, project showcase, downloadable resume and smooth animations."
-},
+    title: "Authentication Project",
+    icon: "🔐",
+    category: "Full Stack / Authentication",
+    tech: ["React", "Node.js", "Express", "MongoDB", "OTP", "Bootstrap"],
+    description:
+      "Built a complete authentication system with OTP-based registration, login, forgot password and a secure dashboard.",
+    details:
+      "This project includes secure login, email OTP verification for registration, forgot password using OTP, password reset and a protected dashboard page. The frontend is built with React and Bootstrap, while the backend uses Node.js, Express and MongoDB Atlas. The project is fully deployed and connected with email-based authentication.",
+    link: "https://authentication-frontend-three.vercel.app/",
+  },
+  {
+    title: "Personal Portfolio Website",
+    icon: "💼",
+    category: "Frontend / Portfolio",
+    tech: ["React", "Bootstrap", "Framer Motion"],
+    description:
+      "Designed and developed my personal portfolio website to showcase my skills, projects and resume.",
+    details:
+      "The portfolio includes responsive pages, dark mode, project showcase, downloadable resume and smooth animations.",
+  },
 ];
 
 const Project = () => {
@@ -71,7 +82,6 @@ const Project = () => {
   return (
     <div className="bg-black text-white min-vh-100 py-5">
       <div className="container">
-        {/* Heading */}
         <div className="text-center mb-5">
           <motion.h1
             className="display-4 fw-bold text-danger"
@@ -94,7 +104,6 @@ const Project = () => {
           </motion.p>
         </div>
 
-        {/* Cards */}
         <div className="row g-4">
           {projects.map((project, index) => (
             <div className="col-12 col-md-6 col-lg-4" key={index}>
@@ -106,6 +115,7 @@ const Project = () => {
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
                 onClick={() => setSelected(project)}
+                style={{ cursor: "pointer" }}
               >
                 <div className="project-icon mb-3">{project.icon}</div>
 
@@ -136,9 +146,11 @@ const Project = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {selected && (
-        <div className="project-modal-overlay" onClick={() => setSelected(null)}>
+        <div
+          className="project-modal-overlay"
+          onClick={() => setSelected(null)}
+        >
           <motion.div
             className="project-modal"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -168,6 +180,17 @@ const Project = () => {
                 </span>
               ))}
             </div>
+
+            {selected.link && (
+              <a
+                href={selected.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-danger mt-4 px-4 py-2 fw-semibold"
+              >
+                View Live Project ↗
+              </a>
+            )}
           </motion.div>
         </div>
       )}
