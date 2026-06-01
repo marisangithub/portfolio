@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
+import PortfolioAssistant from "./PortfolioAssistant";
 import About from './About';
 import Project from './Project';
 import Skills from './Skills'
@@ -28,7 +29,7 @@ const App = () => {
         <Route path='/skills' element={<Skills />} />
         
       </Routes>
-
+  <PortfolioAssistant />
 
     </>
   );
