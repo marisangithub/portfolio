@@ -30,18 +30,73 @@ const Home = () => {
                   />
                 </span>
               </h2>
+               <p
+                className="text-secondary mt-4"
+                style={{
+                  fontSize: '1.1rem',
+                  lineHeight: '1.8'
+                }}
+              >
+                Full Stack Developer with experience building modern,
+                responsive and scalable web applications using
+                React.js, Node.js, Express.js and MongoDB.
+                Passionate about creating user-friendly digital
+                experiences and continuously learning new technologies.
+              </p>
 
+                            <div className="mt-3">
+                <span className="badge bg-success fs-6 p-2">
+                  Available for Full Stack Opportunities
+                </span>
+              </div>
+              <div className="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start">
+
+                <a
+                  href="/project"
+                  className="btn btn-danger px-4 py-2"
+                >
+                  View Projects
+                </a>  
+              </div>
               {/* Social icons */}
-              <div className="d-flex justify-content-center justify-content-md-start gap-3 mt-4">
-                <a href="https://github.com/marisangithub">
-                  <img src={Github} alt="GitHub" className="contactlogo" />
+  <div className="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+
+                <a
+                  href="https://github.com/marisangithub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Github}
+                    alt="GitHub"
+                    className="contactlogo"
+                  />
                 </a>
-                <a href="https://www.linkedin.com/in/mari-san-33bb8b288">
-                  <img src={LinkedIn} alt="LinkedIn" className="contactlogo" />
+
+                <a
+                  href="https://www.linkedin.com/in/mari-san-33bb8b288"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={LinkedIn}
+                    alt="LinkedIn"
+                    className="contactlogo"
+                  />
                 </a>
-                <a href="https://wa.me/+916374536684">
-                  <img src={Whatsapp} alt="WhatsApp" className="contactlogo" />
+
+                <a
+                  href="https://wa.me/916374536684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={Whatsapp}
+                    alt="WhatsApp"
+                    className="contactlogo"
+                  />
                 </a>
+
               </div>
             </div>
 

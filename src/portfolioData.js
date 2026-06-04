@@ -59,6 +59,25 @@ I am a Full Stack Developer with 10 months of hands-on experience building respo
     },
 
     {
+  name: "JobGenie AI",
+  tech: [
+    "React.js",
+    "Bootstrap",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Gemini AI    ",
+    "Neon DB",
+    "Groq AI",
+    "JWT",
+    "Nodemailer",
+    "Vercel",
+    "Render"
+  ],
+  description:
+    "Built and deployed a full-stack AI-powered Resume Builder, ATS Analyzer, and Job Matching platform with secure JWT authentication, email OTP verification, PostgreSQL database integration, and responsive modern UI."
+},
+    {
       name: "Full Stack Authentication System",
       tech: [
         "React.js",

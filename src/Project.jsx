@@ -74,6 +74,32 @@ const projects = [
     details:
       "The portfolio includes responsive pages, dark mode, project showcase, downloadable resume and smooth animations.",
   },
+  {
+  title: "JobGenie AI",
+  icon: "🤖",
+  category: "AI / Full Stack",
+  tech: [
+    "React",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Neon DB",
+    "Groq AI",
+    "Gemini AI",
+    "JWT",
+    "Nodemailer",
+    "Bootstrap"
+  ],
+
+  description:
+    "AI-powered Resume Builder, ATS Analyzer and Job Matching platform with Email OTP Authentication.",
+
+  details:
+    "JobGenie AI is a complete career assistant platform that helps users create professional resumes, upload and manage resumes, analyze ATS compatibility, receive AI-generated suggestions, and discover relevant job opportunities. The application includes secure JWT authentication, Email OTP verification, PostgreSQL database integration with Neon, AI-powered resume analysis using Groq, resume history management, resume library, responsive dark UI and cloud deployment using Vercel and Render.",
+
+  link:
+    "https://job-gine-frontend.vercel.app/"
+},
 ];
 
 const Project = () => {
