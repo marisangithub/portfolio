@@ -52,7 +52,7 @@ const Home = () => {
               <div className="d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start">
 
                 <a
-                  href="/projects"
+                  href="/project"
                   className="btn btn-danger px-4 py-2"
                 >
                   View Projects
