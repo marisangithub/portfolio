@@ -13,7 +13,7 @@ const Home = () => {
       <div className="page-content">
         <div className="container mt-5">
           <div className="row align-items-center">
-            
+
             {/* LEFT COLUMN (Text) */}
             <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
               <h2 className="text-white font-heading">
@@ -30,13 +30,11 @@ const Home = () => {
                   />
                 </span>
               </h2>
-               <p
-                className="text-secondary mt-4"
+              <p className="text-secondary mt-4"
                 style={{
                   fontSize: '1.1rem',
                   lineHeight: '1.8'
-                }}
-              >
+                }} >
                 Full Stack Developer with experience building modern,
                 responsive and scalable web applications using
                 React.js, Node.js, Express.js and MongoDB.
@@ -44,7 +42,7 @@ const Home = () => {
                 experiences and continuously learning new technologies.
               </p>
 
-                            <div className="mt-3">
+              <div className="mt-3">
                 <span className="badge bg-success fs-6 p-2">
                   Available for Full Stack Opportunities
                 </span>
@@ -56,10 +54,10 @@ const Home = () => {
                   className="btn btn-danger px-4 py-2"
                 >
                   View Projects
-                </a>  
+                </a>
               </div>
               {/* Social icons */}
-  <div className="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+              <div className="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
 
                 <a
                   href="https://github.com/marisangithub"
@@ -101,15 +99,15 @@ const Home = () => {
             </div>
 
             {/* RIGHT COLUMN (Profile Image) */}
-  <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0">
-  <div className="hero-img-wrapper glow-border">
-    <img
-      src={profileImage}
-      alt="Marisan"
-      className="hero-img"
-    />
-  </div>
-</div>
+            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0">
+              <div className="hero-img-wrapper glow-border">
+                <img
+                  src={profileImage}
+                  alt="Marisan"
+                  className="hero-img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

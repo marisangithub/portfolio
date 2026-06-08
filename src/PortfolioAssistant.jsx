@@ -100,23 +100,23 @@ Ask me about my skills, projects, experience, education, certifications, or cont
       `}</style>
 
       <div style={{
-        position:"fixed",bottom:"100px",right:"20px",background:"#fff",
-        padding:"12px 16px",borderRadius:"12px",
-        boxShadow:"0 5px 20px rgba(0,0,0,.15)",zIndex:9998,
-        maxWidth:"220px",animation:"floatCard 3s ease-in-out infinite"
+        position: "fixed", bottom: "100px", right: "20px", background: "#fff",
+        padding: "12px 16px", borderRadius: "12px",
+        boxShadow: "0 5px 20px rgba(0,0,0,.15)", zIndex: 9998,
+        maxWidth: "220px", animation: "floatCard 3s ease-in-out infinite"
       }}>
         <div className="fw-bold">🚀 Skip the scrolling</div>
-        <div>Chat with a digital version<br/>of me instead.</div>
+        <div>Chat with a digital version<br />of me instead.</div>
       </div>
 
       <button
         onClick={() => setIsOpen(!isOpen)}
         style={{
-          position:"fixed",bottom:"20px",right:"20px",
-          width:"65px",height:"65px",borderRadius:"50%",
-          border:"none",background:"#0d6efd",color:"#fff",
-          fontSize:"28px",fontWeight:"bold",cursor:"pointer",
-          zIndex:9999,animation:"pulseBtn 2s infinite"
+          position: "fixed", bottom: "20px", right: "20px",
+          width: "65px", height: "65px", borderRadius: "50%",
+          border: "none", background: "#0d6efd", color: "#fff",
+          fontSize: "28px", fontWeight: "bold", cursor: "pointer",
+          zIndex: 9999, animation: "pulseBtn 2s infinite"
         }}
       >
         M
@@ -124,22 +124,22 @@ Ask me about my skills, projects, experience, education, certifications, or cont
 
       {isOpen && (
         <div style={{
-          position:"fixed",bottom:"95px",right:"20px",
-          width:"360px",height:"500px",background:"#fff",
-          borderRadius:"15px",boxShadow:"0 0 20px rgba(0,0,0,.2)",
-          display:"flex",flexDirection:"column",zIndex:9999
+          position: "fixed", bottom: "95px", right: "20px",
+          width: "360px", height: "500px", background: "#fff",
+          borderRadius: "15px", boxShadow: "0 0 20px rgba(0,0,0,.2)",
+          display: "flex", flexDirection: "column", zIndex: 9999
         }}>
-          <div style={{background:"#2563eb",color:"#fff",padding:"15px",fontWeight:"bold"}}>
+          <div style={{ background: "#2563eb", color: "#fff", padding: "15px", fontWeight: "bold" }}>
             👨‍💻 Digital Mari
           </div>
 
-          <div style={{flex:1,overflowY:"auto",padding:"10px"}}>
-            {messages.map((msg,i)=>(
-              <div key={i} style={{textAlign:msg.sender==="user"?"right":"left",marginBottom:"10px"}}>
+          <div style={{ flex: 1, overflowY: "auto", padding: "10px" }}>
+            {messages.map((msg, i) => (
+              <div key={i} style={{ textAlign: msg.sender === "user" ? "right" : "left", marginBottom: "10px" }}>
                 <div style={{
-                  display:"inline-block",padding:"10px",borderRadius:"10px",
-                  background:msg.sender==="user"?"#2563eb":"#f3f4f6",
-                  color:msg.sender==="user"?"white":"black",maxWidth:"85%"
+                  display: "inline-block", padding: "10px", borderRadius: "10px",
+                  background: msg.sender === "user" ? "#2563eb" : "#f3f4f6",
+                  color: msg.sender === "user" ? "white" : "black", maxWidth: "85%"
                 }}>
                   {msg.text}
                 </div>
@@ -158,31 +158,31 @@ Ask me about my skills, projects, experience, education, certifications, or cont
           </div>
 
           <div className="d-flex flex-wrap gap-2 p-2 border-top border-bottom">
-            <button className="btn btn-sm btn-outline-primary" onClick={()=>sendMessage("Tell me about yourself")}>👋 About Me</button>
-            <button className="btn btn-sm btn-outline-primary" onClick={()=>sendMessage("What skills do you have?")}>💻 Skills</button>
-            <button className="btn btn-sm btn-outline-primary" onClick={()=>sendMessage("What projects have you built?")}>🚀 Projects</button>
-            <button className="btn btn-sm btn-outline-primary" onClick={()=>sendMessage("Tell me about your experience")}>📈 Experience</button>
-            <button className="btn btn-sm btn-outline-primary" onClick={()=>sendMessage("How can I contact you?")}>📞 Contact</button>
+            <button className="btn btn-sm btn-outline-primary" onClick={() => sendMessage("Tell me about yourself")}>👋 About Me</button>
+            <button className="btn btn-sm btn-outline-primary" onClick={() => sendMessage("What skills do you have?")}>💻 Skills</button>
+            <button className="btn btn-sm btn-outline-primary" onClick={() => sendMessage("What projects have you built?")}>🚀 Projects</button>
+            <button className="btn btn-sm btn-outline-primary" onClick={() => sendMessage("Tell me about your experience")}>📈 Experience</button>
+            <button className="btn btn-sm btn-outline-primary" onClick={() => sendMessage("How can I contact you?")}>📞 Contact</button>
           </div>
 
-          <div style={{display:"flex",padding:"10px"}}>
+          <div style={{ display: "flex", padding: "10px" }}>
             <input
               type="text"
               value={input}
-              onChange={(e)=>setInput(e.target.value)}
-              onKeyDown={(e)=>e.key==="Enter" && sendMessage()}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder="Ask me anything..."
-              style={{flex:1,padding:"10px"}}
+              style={{ flex: 1, padding: "10px" }}
             />
             <button
-              onClick={()=>sendMessage()}
+              onClick={() => sendMessage()}
               style={{
-                marginLeft:"10px",width:"45px",height:"45px",
-                borderRadius:"50%",border:"none",
-                background:"#2563eb",color:"#fff"
+                marginLeft: "10px", width: "45px", height: "45px",
+                borderRadius: "50%", border: "none",
+                background: "#2563eb", color: "#fff"
               }}
             >
-              <IoSend size={20}/>
+              <IoSend size={20} />
             </button>
           </div>
         </div>
