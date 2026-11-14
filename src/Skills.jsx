@@ -7,6 +7,8 @@ import {
   FaGithub,
   FaLinux,
   FaGitAlt,
+  FaRobot,
+  FaCode,
 } from "react-icons/fa";
 
 import {
@@ -18,18 +20,23 @@ import {
   SiPostgresql,
   SiPostman,
   SiBurpsuite,
+  SiTypescript,
+  SiExpo,
+  SiJsonwebtokens,
+  SiCloudinary,
 } from "react-icons/si";
 
 import Footer from "./Footer";
 
+
 const skills = [
   {
-    name: "HTML",
+    name: "HTML5",
     percent: 90,
     icon: <FaHtml5 className="skill-icon text-danger" />,
   },
   {
-    name: "CSS",
+    name: "CSS3",
     percent: 85,
     icon: <FaCss3Alt className="skill-icon text-primary" />,
   },
@@ -39,9 +46,24 @@ const skills = [
     icon: <SiJavascript className="skill-icon text-warning" />,
   },
   {
+    name: "TypeScript",
+    percent: 70,
+    icon: <SiTypescript className="skill-icon text-info" />,
+  },
+  {
     name: "React JS",
     percent: 85,
     icon: <FaReact className="skill-icon text-info" />,
+  },
+  {
+    name: "React Native",
+    percent: 75,
+    icon: <FaReact className="skill-icon text-info" />,
+  },
+  {
+    name: "Expo",
+    percent: 75,
+    icon: <SiExpo className="skill-icon text-light" />,
   },
   {
     name: "Node JS",
@@ -53,6 +75,7 @@ const skills = [
     percent: 75,
     icon: <SiExpress className="skill-icon text-light" />,
   },
+
   {
     name: "MongoDB",
     percent: 80,
@@ -72,6 +95,26 @@ const skills = [
     name: "Tailwind CSS",
     percent: 80,
     icon: <SiTailwindcss className="skill-icon text-info" />,
+  },
+  {
+    name: "REST API",
+    percent: 80,
+    icon: <FaCode className="skill-icon text-warning" />,
+  },
+  {
+    name: "JWT Authentication",
+    percent: 75,
+    icon: <SiJsonwebtokens className="skill-icon text-warning" />,
+  },
+  {
+    name: "Cloudinary",
+    percent: 70,
+    icon: <SiCloudinary className="skill-icon text-info" />,
+  },
+  {
+    name: "AI Integration",
+    percent: 70,
+    icon: <FaRobot className="skill-icon text-info" />,
   },
   {
     name: "GitHub",
