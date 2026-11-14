@@ -30,6 +30,30 @@ const projects = [
     link:
       "https://job-gine-frontend.vercel.app/"
   },
+    
+{
+  title: "Savel Selling - Online Rooster Marketplace",
+  icon: "🐓",
+  category: "MERN Stack / E-Commerce",
+  tech: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "REST API",
+    "Multilingual UI"
+  ],
+  description:
+    "A multilingual online marketplace designed for buying and selling native Tamil Nadu roosters, hens and chicks.",
+
+  details:
+    "Savel Selling is a full-stack online marketplace designed specifically for Tamil Nadu's native poultry trading community. The platform allows users to explore bird categories such as Rooster, Hen and Chicks, view bird details, and create listings with breed, age, price, description, district, location and photos. The frontend is developed using React, Vite and Tailwind CSS, while the backend uses Node.js, Express.js and MongoDB Atlas. It includes JWT-based authentication and a multilingual interface supporting English, Tamil and Thanglish. The project focuses on providing a simple and user-friendly digital marketplace for local poultry buyers and sellers.",
+
+},
+
   {
     title: "Secure File Storage on Cloud Using Hybrid Cryptography",
     icon: "📁",
