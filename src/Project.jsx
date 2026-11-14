@@ -32,28 +32,55 @@ const projects = [
   },
     
 
+
 {
-  title: "Savel Cart - Rooster Marketplace",
+  title: "Savel Cart - Web & Mobile Marketplace",
   icon: "🐓",
   category: "Full Stack / Web & Mobile App",
+
   tech: [
-    "React",
+    "React.js",
     "Vite",
     "Tailwind CSS",
+    "React Native",
+    "Expo SDK 58",
+    "Expo Router",
+    "TypeScript",
     "Node.js",
     "Express.js",
-    "MongoDB",
+    "MongoDB Atlas",
     "JWT",
-    "REST API",
-    "Multilingual Support",
-    "Mobile App"
+    "Cloudinary",
+    "Brevo API",
+    "Firebase",
+    "Expo Notifications",
+    "Web Push",
+    "VAPID",
+    "Expo Secure Store",
+    "EAS Build"
   ],
 
   description:
-    "A multilingual web and mobile marketplace for buying and selling native Tamil Nadu roosters, hens and chicks.",
+    "A full-stack web and native Android marketplace connecting buyers and sellers of native Tamil Nadu roosters, hens and chicks, with multilingual support.",
 
-  details:
-    "Savel Cart is a full-stack marketplace platform developed to digitize the traditional poultry trading community in Tamil Nadu. The platform provides both web and mobile application experiences, allowing users to explore, buy and sell native birds. It supports multiple categories including Rooster, Hen and Chicks, with detailed listings containing breed, age, price, description, district, location and photos. The web application is built using React, Vite and Tailwind CSS, with Node.js, Express.js and MongoDB powering the backend. It includes JWT-based authentication and multilingual support for English, Tamil and Thanglish. The project aims to provide a simple and accessible digital marketplace for local buyers and sellers.",
+  details: `Savel Cart is a full-stack web and mobile marketplace developed to digitize the traditional poultry trading community in Tamil Nadu. The platform provides a convenient digital space for users to discover, buy and sell native birds through both web and Android applications.
+
+WEB APPLICATION:
+Developed a responsive web application using React.js, Vite and Tailwind CSS. Implemented interactive interfaces, bird categories, product listings, detailed bird information and user-friendly navigation.
+
+MOBILE APPLICATION:
+Developed a native Android application using React Native and Expo SDK 58. Used Expo Router for application navigation, TypeScript for type-safe development and Expo Secure Store for secure local data storage. Configured Expo EAS for mobile application builds.
+
+BACKEND & DATABASE:
+Built RESTful APIs using Node.js and Express.js. Integrated MongoDB Atlas for storing user accounts, bird listings and application data. Implemented JWT-based authentication for secure user access.
+
+CLOUD & THIRD-PARTY INTEGRATIONS:
+Integrated Cloudinary for cloud-based image uploads and storage. Used Brevo API for email communication. Configured Web Push Notifications using VAPID and mobile notification workflows using Expo Notifications and Expo Push Tokens. Configured Firebase Android project integration.
+
+MULTILINGUAL SUPPORT:
+Implemented multilingual support for English, Tamil and Thanglish to make the platform accessible to users across Tamil Nadu.
+
+The platform supports bird categories such as Rooster, Hen and Chicks, with listing details including breed, age, price, description, district, location and photos.`,
 
   link: "https://savelcart-fawn.vercel.app/"
 },
